@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Extranet</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Boxicons CDN LINK --> 
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bx-buildings'></i>
+                <div class="logo_name">Extranet</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="./vistas/usuario.html">
+                    <i class='bx bxs-user'></i>
+                    <span class="links_name">Usuario</span>
+                </a>
+                <span class="tooltap">Usuario</span>
+            </li>
+            <li>
+                <a href="./vistas/habitaciones.html">
+                    <i class='bx bxs-home-alt-2'></i>
+                    <span class="links_name">Habitaciones</span>
+                </a>
+                <span class="tooltap">Habitaciones</span>
+            </li>
+            <li>
+                <a href="./index.html">
+                    <i class='bx bxs-calendar'></i>
+                    <span class="links_name">Reservas</span>
+                </a>
+                <span class="tooltap">Reservas</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-planet'></i>
+                    <span class="links_name">Disponibilidad</span>
+                </a>
+                <span class="tooltap">Disponibilidad</span>
+            </li>
+            <li>
+                <a href="./vistas/acercade.html">
+                    <i class='bx bx-question-mark'></i>
+                    <span class="links_name">Acerca de</span>
+                </a>
+                <span class="tooltap">Acerca de</span>
+            </li>
+
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="../images/fotoPerfil.jpeg" alt="">
+                    <div class="name_job">
+                        <div class="name">Abraham Ponce</div>
+                        <div class="job">Diseñador Web</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    <!-- Plantilla Para Reservas -->
+    <div class="home_content">
+        <!-- <div class="text">Contenido de Inicio</div> -->
+        <div class="tituloReservas">
+            <img src="../images/perfil.png" alt="" id="avatar">
+            <h1>Bienvenido</h1>
+            <h2>Abraham</h2>
+        </div>
+        <div class="datos">
+            <h2 class="datosPerfil">Tus Datos de Perfil</h2>
+            <h3>Nombre completo:</h3>
+            <h4>{{.nombre}}</h4>
+            <h3>Correo Electronico</h3>
+            <h4>{{.correo}}</h4>
+            <h3>Puesto laboral</h3>
+            <h4>{{.puesto}}</h4>
+            <h3>Empresa</h3>
+            <h4>{{.empresa}}</h4>
+        </div>
+    </div>
+    <img src="../images/fondo.png" id="fondoVistas" alt="">
+    <script src="../JS/script.js"></script>
+</body>
+</html>
